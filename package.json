@@ -1,0 +1,22 @@
+{
+  "name": "renew",
+  "version": "1.0.0",
+  "description": "This is a website in the works for Renew Physiotherapy. Renew is a local clinic that did not have a landing page for their company and that is the inspiration for this project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephmitchell48/Renew.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephmitchell48/Renew/issues"
+  },
+  "homepage": "https://github.com/josephmitchell48/Renew#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

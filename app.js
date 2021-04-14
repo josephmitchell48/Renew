@@ -1,22 +1,28 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
+const path = require('path');
 
-const server = http.createServer((req, res)=>{
-        res.writeHead(200, {
-            'Content-Type': 'text/html'
-        });
-        fs.readFile('./home.html', null, function (error, data) {
-            if (error) {
-                res.writeHead(404);
-                res.write('Whoops! File not found!');
-            } else {
-                res.write(data);
-            }
+const app = express();
+app.use('/static', express.static('public'))
 
-        res.end();
-        });
-});
+app.get('/', function(req, res){
+    res.sendFile(path.join(__dirname, '/home.html'));
+})
+app.get('/home.html', function(req, res){
+    res.sendFile(path.join(__dirname, '/home.html'));
+})
+app.get('/therapy.html', function(req, res){
+    res.sendFile(path.join(__dirname, '/therapy.html'));
+})
+app.get('/massage.html', function(req, res){
+    res.sendFile(path.join(__dirname, '/massage.html'));
+})
+app.get('/staff.html', function(req, res){
+    res.sendFile(path.join(__dirname, '/staff.html'));
+})
+app.get('/contact.html', function(req, res){
+    res.sendFile(path.join(__dirname, '/contact.html'));
+})
 
-server.listen(3000);
+app.listen(3000);
 
 console.log('listening on port 3000...');
