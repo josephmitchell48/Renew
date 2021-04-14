@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, "Times New Roman", Times, serif;
+  }
+
+.banner-container{
+  background-color: #4a6c2f;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.banner{
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+}
+.banner-items{
+  display: flex;
+  justify-content: left;
+  font-size: large;
+  color: #FFF;
+}
+a:link,
+a:visited {
+  color:white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.header-container {
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background:#235477;
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  justify-content: space-evenly;
+  font-size: x-large;
+}
+.menu {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu > li {
+  display: inline;
+  margin-right: 70px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 5px;
+}
+.dropdown-services{
+  color: white;
+}
+.dropdown-services:hover
+.features-menu-services {
+  display: flex;
+  flex-direction: column;
+  background: #505050;
+  border-radius: 5px;
+  padding-top: 60px;
+  position: absolute; 
+  top: -25px;
+  left: -30px;
+  z-index: 1;
+}
+.features-menu-services{
+  display: none;
+}
+.features-menu-services li {
+  list-style: none;
+  border-bottom: 1px solid #FFF;
+  padding: 0 5px 10px 5px;
+  margin: 10px;
+}
+.features-menu-services li:last-of-type {
+  border-bottom: none;
+}
+.dropdown-services{
+  position: relative;
+}
+.dropdown-services > span {
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+.background-picture{
+  /* The image used */
+  background-image: url("images/pexels-mali-maeder-1415810.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  background-image: linear-gradient( to bottom left, #cfdfda, #FFF);
+}
+.description{
+  display: flex;
+  align-self: center;
+  text-align: center;
+  max-width: 1000px;
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 2;
+  color: #236477;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #236477;
+
+}
+.content-container h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  font-size: 50px;
+  background: linear-gradient( to top,#173042 , #236477);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent ;
+}
+.description-container p{
+  font-size: 24px;
+  line-height: 2;
+  color: #236477;
+}
+.services-container{
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 2px solid #236477;
+}
+.services-container a{
+  margin: 50px 10px 50px 10px;
+}
+.services-grid-item {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  align-items: center;
+}
+.physio-pic{
+  background: url(images/physioRoller300x300.jpg);
+  background-size: cover;
+}
+.massage-pic{
+  background: url(images/massageFeet.jpg);
+  background-size: cover;
+}
+.services-pic-text{
+  background-color: #5D6063;
+  opacity: 0.8;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #FFF;
+  font-size: 30px;
+}
+.content-container h2{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  font-size: 30px;
+  background: linear-gradient( to top,#173042 , #236477);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent ;
+}
+.stars-pic{
+  max-width: 200px;
+  align-self: center;
+}
+.review-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: space-evenly;
+  color: #236477;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.review-grid-item {
+  justify-content: center;
+  padding-left: 45px;
+  padding-right: 10px;
+  height: 200px;
+}
+.quote{
+  text-align: center;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+}
+.client-info{
+  display: flex;
+  margin-top: 10px;
+  width: 160px;
+}
+.facebook-icon{
+  display: flex;
+  height: 60px;
+  width: 60px;
+}
+
+blockquote {
+  font-family:Georgia, "Times New Roman", Times, serif;
+  margin-bottom:-30px;
+  position: relative; 
+  max-width: 300px; 
+  margin: 0 auto; 
+}
+
+blockquote p {
+  font-size:21px;
+}
+
+blockquote p:before { 
+  content: "\201C";
+  font-weight: bold;
+  font-size:80px;
+  color:grey;
+  position: absolute; 
+  top: -0.2em;
+  left: -0.5em; 
+  font-family: 'Georgia'; 
+} 
+blockquote p:after { 
+  content: "\201D";
+  font-weight: bold;
+  font-size:40px;
+  color:grey;
+  position: absolute;
+  right: 0.1em;
+  bottom: -0.6em;
+  font-family: 'Georgia'; 
+}
+
+.footer-copyright{
+  color: #FFF;
+  background-color: #4a6c2f;
+  height: 50px;
+  text-align: center;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 600px){
+
+.bar{
+  height: 3px;
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 1px;
+
+}
+.toggle-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40px;
+  width: 30px;
+  margin: 10px 100px 10px 100px;
+}
+.menu{
+  display: none;
+  background-color: #505050;
+  width: 100%;
+}
+.menu.active{
+  display: flex;
+}
+.menu li{
+  float: none;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  display: block;
+}
+
+.dropdown-services:hover
+.features-menu-services {
+  display: flex;
+  flex-direction: column;
+  background: #505050;
+  border-radius: 5px;
+  padding-top: 20px;
+  position: relative;
+  top: -25px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+.features-menu-services{
+  display: none;
+}
+.features-menu-services li {
+  list-style: none;
+  margin-top: 20px;
+}
+.features-menu-services li:last-of-type {
+  border-bottom: none;
+  margin-top: 0px;
+}
+.dropdown-services{
+  position: relative;
+  height: auto;
+}
+.dropdown-services > span {
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+}

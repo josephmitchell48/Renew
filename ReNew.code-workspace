@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\test"
+		},
+		{
+			"path": "..\\responsive-design"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ReNew"
+	}
+}

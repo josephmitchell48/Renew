@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, "Times New Roman", Times, serif;
+  }
+.contact-grid-container{
+    display: flex;
+    justify-content: center;
+}
+.contact-grid{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+}
+.contact-grid-item {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+  }
+.contact-grid-item strong{
+    display: flex;
+    font-size: xx-large;
+    padding-bottom: 40px;
+    padding-top: 25px;
+    justify-content: center;
+}
+
+.contact-grid-item ul{
+    list-style-type: none;
+}
+.icons{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+}
+.map-container{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
